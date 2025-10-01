@@ -1,133 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para a Melhor Amiga do Mundo</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital@1&display=swap');
-
-        body {
-            background-color: #fce4ec; /* Um rosa bem clarinho */
-            font-family: 'Playfair Display', serif;
-            color: #333;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 40px 60px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-        }
-
-        h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 4em;
-            color: #e91e63; /* Rosa mais forte */
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-
-        p {
-            font-size: 1.4em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .special-message {
-            margin-top: 30px;
-            font-style: italic;
-        }
-
-        .heart {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: #e91e63;
-            transform: rotate(-45deg);
-            animation: fall 10s infinite linear;
-            z-index: 1;
-        }
-
-        .heart::before,
-        .heart::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: #e91e63;
-            border-radius: 50%;
-        }
-
-        .heart::before {
-            top: -10px;
-            left: 0;
-        }
-
-        .heart::after {
-            top: 0;
-            left: 10px;
-        }
-
-        @keyframes fall {
-            0% {
-                transform: translateY(-10vh) rotate(-45deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(110vh) rotate(-45deg);
-                opacity: 0;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Minha Melhor Amiga</title>
+<style>
+body {
+background-color: #ffe4e1;
+font-family: 'Arial', sans-serif;
+text-align: center;
+color: #333;
+padding: 20px;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background-color: #fff;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+h1 {
+color: #ff69b4;
+font-size: 2.5em;
+}
+p {
+font-size: 1.2em;
+line-height: 1.6;
+}
+.hearts, .flowers {
+font-size: 2em;
+margin: 20px 0;
+}
+</style>
 </head>
 <body>
 
-    <script>
-        function createHearts() {
-            const container = document.body;
-            const heartCount = 30; // Quantidade de corações
-
-            for (let i = 0; i < heartCount; i++) {
-                const heart = document.createElement('div');
-                heart.className = 'heart';
-                heart.style.left = Math.random() * 100 + 'vw';
-                heart.style.animationDuration = Math.random() * 5 + 5 + 's';
-                heart.style.animationDelay = Math.random() * 5 + 's';
-                heart.style.opacity = Math.random();
-                container.appendChild(heart);
-            }
-        }
-        createHearts();
-    </script>
-
-    <div class="container">
-        <h1>Para minha melhor amiga...</h1>
-        <div class="special-message">
-            <p>
-                Às vezes, a vida nos apresenta um "probleminha diário", um desafio que parece grande demais. Mas ter você ao meu lado transforma qualquer obstáculo em apenas um detalhe.
-            </p>
-            <p>
-                Sua amizade é a minha calmaria na tempestade, a minha certeza em meio às dúvidas e a melodia que deixa meus dias mais leves. Obrigada por ser a pessoa incrível que você é, por cada risada, cada conselho e cada momento.
-            </p>
-            <p>
-                Você é mais que uma amiga, é um presente. ❤️
-            </p>
-        </div>
+<div class="container">
+    <div class="flowers">
+        <span>🌸</span>
+        <span>🌷</span>
+        <span>🌺</span>
+        <span>🌹</span>
+        <span>🌻</span>
+        <span>🌼</span>
     </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLfKkIeS1y3_7gY3xO9c8a9jX6fH8q1l3&autoplay=1&loop=1" style="display:none" allow="autoplay"></iframe>
+    <h1>Para a Melhor Amiga do Mundo!</h1>
 
+    <p>Amiga, esta é uma pequena homenagem para te lembrar o quão especial você é para mim. Sua amizade é um presente diário, uma luz que ilumina meus dias e me enche de alegria.</p>
+
+    <p>Obrigada por cada risada, cada abraço, cada conselho e por estar sempre ao meu lado, nos bons e maus momentos. Ter você na minha vida é uma das minhas maiores certezas e alegrias.</p>
+
+    <p>Que nossa amizade continue a florescer e a nos presentear com momentos inesquecíveis. Você é mais que uma amiga, é uma irmã que a vida me deu.</p>
+
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💕</span>
+        <span>💞</span>
+    </div>
+
+    <p><strong>Com todo o meu carinho,</strong></p>
+    <p><strong>Sua Melhor Amiga.</strong></p>
+
+</div>
+
+<iframe width="560" height="315" src="[https://www.youtube.com/embed/A1iUwYvRphY?autoplay=1](https://www.youtube.com/embed/A1iUwYvRphY?autoplay=1)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none"></iframe>
 </body>
-  </html>
+</html>
